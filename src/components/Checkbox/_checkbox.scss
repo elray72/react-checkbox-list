@@ -1,0 +1,57 @@
+@import './_mixins';
+
+$primary: grey;
+
+.checkbox {
+  border: 1px solid red;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 2.5em;
+
+  //&:before {
+  //  background: rgba($primary, 0.3);
+  //  border-radius: 50%;
+  //  //content: '';
+  //  display: block;
+  //  height: 2.5em;
+  //  width: 2.5em;
+  //  margin: auto;
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //}
+
+  &:hover {
+  }
+
+  &__box {
+    border: 2px solid $primary;
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: block;
+    height: 1.25em;
+    width: 1.25em;
+    padding: 0.125em;
+
+    svg {
+      color: $primary;
+      font-size: 0.75em;
+      display: block;
+    }
+  }
+
+  input[type='checkbox'] {
+    margin: 0;
+    position: absolute;
+    top: -16px;
+    right: 0;
+
+    display: none;
+  }
+
+  &__label {
+    display: none;
+  }
+}
